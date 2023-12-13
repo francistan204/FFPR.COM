@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+        <meta name="viewport" content="width=device-width">
+        <script src="js/formValidate.js"></script>
+        <title>Francis' Fantastic Pet Resort</title>
+    </head>
+    <body>
+            <div class="container">
+                <div class="header">
+                    <img id="titlepic" src="images/title.jpg" alt="page title">
+                    <img id="bannerpic" src="images/banner pic.jpg" alt="background picture of cats and dogs">
+                </div>
+                <div class="topnav">
+                    <a href="services.html">Services</a>
+                    <a href="contactpage.html">Contact Us</a>
+                    <a href="index.html">Home</a>
+                    <a href="#">Log in</a>
+                    <a href="#">Gallery</a>
+                </div>
+                
+                    <form id="form" action ="contactpage.html" method="post">
+                        <fieldset>
+                        <div class="contactinfo">
+                            <ul>
+                                <li>
+                                    <label for="name">Name</label>
+                                    <input id="name" name="name" type="text"/>
+                                    <p class="contactError error" id="name_error">* Required Field</p>
+                                </li>
+                                <li>
+                                    <label for="number">Phone Number</label>
+                                    <input id="number" name="number" type="text"/>
+                                    <p class="contactError error" id="number_error">* Required Field</p>
+                                    <p class="contactError error" id="numberFormat_error">* Invalid Phone Number</p>
+                                </li>
+                                <li>
+                                    <label for="email">Email</label>
+                                        <input id="email" name="email" type="text" />
+                                        <p class="contactError error" id="email_error">* Required field</p>
+                                        <p class="contactError error" id="emailformat_error">
+                                            * Invalid email address
+                                </li>
+                                <li>
+                                    <label for="commentbox">Leave a Comment</label>
+                                    <textarea rows="3" id="commentbox" name="commentbox"></textarea>
+                                </li>
+                            </ul>
+                        </div>
+                    
+                
+                <div class="buttons">
+                    <button type="submit" id="submit">Submit</button>
+                    <button type="reset" id="clear">Reset</button>
+                </div>
+            </fieldset>
+                </form>
+                <div class="footer">
+                    <a href="index.html">Home</a>
+                    <a href="#">Terms</a>
+                    <a href="#">Privacy</a>
+                    <a href="#">Site Map</a>
+                    <a href="#">RSS</a>
+                    
+                </div>
+            </div>
+    </body>
+</html>
